@@ -1,0 +1,5 @@
+Bienvenidos a la API REST del e-commerce "e-Box"
+
+NODE.JS.: POO-CRUD
+LIBRERIAS: EXPRESS-FAKER-BOOM-JOI-CORS  (HTTPS-HELMET)
+

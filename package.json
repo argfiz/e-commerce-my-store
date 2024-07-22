@@ -1,0 +1,28 @@
+{
+  "name": "e-commerce-my-store",
+  "version": "0.7.0",
+  "description": "\"My E-commerce Store\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch index.js",
+    "start": "node index.js",
+    "lint": "eslint"
+  },
+  "author": "Franco Zoqui",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.7.0",
+    "eslint": "^9.7.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.8.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@hapi/boom": "^10.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "joi": "^17.13.3"
+  }
+}
