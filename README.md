@@ -109,58 +109,59 @@ Con estos pasos, deberías tener tu proyecto "e-commerce-my-store" configurado y
 ## My Skills
 Tecnologías Utilizadas: Express.js - Joi - Boom - Docker - pg - eslint y eslint-config-prettier - Faker - Cors - Dotenv
 
-    Express.js: Framework de Node.js utilizado para construir el servidor y manejar las rutas.
+Express.js: Framework de Node.js utilizado para construir el servidor y manejar las rutas.
 
-    Joi: Librería para la validación de datos, garantizando que los datos de entrada cumplan con ciertos esquemas.
+Joi: Librería para la validación de datos, garantizando que los datos de entrada cumplan con ciertos esquemas.
 
-    @hapi/boom: Utilizado para el manejo de errores HTTP de manera consistente.
-    PostgreSQL: Base de datos relacional utilizada para almacenar los datos del e-commerce.
+@hapi/boom: Utilizado para el manejo de errores HTTP de manera consistente.
 
-    Docker: Herramienta de contenedorización utilizada para crear entornos aislados para PostgreSQL y pgAdmin.
+PostgreSQL: Base de datos relacional utilizada para almacenar los datos del e-commerce.
 
-    pg: Cliente de Node.js para conectarse y realizar consultas a PostgreSQL.
+Docker: Herramienta de contenedorización utilizada para crear entornos aislados para PostgreSQL y pgAdmin.
 
-    @faker-js/faker: Utilizado para generar datos falsos para productos, útil para pruebas y desarrollo.
+pg: Cliente de Node.js para conectarse y realizar consultas a PostgreSQL.
 
-    eslint y eslint-config-prettier: Herramientas de linting y formateo de código para mantener la consistencia y calidad del código.
+@faker-js/faker: Utilizado para generar datos falsos para productos, útil para pruebas y desarrollo.
 
-    dotenv: Utilizado para manejar variables de entorno de manera segura y conveniente.
+eslint y eslint-config-prettier: Herramientas de linting y formateo de código para mantener la consistencia y calidad del código.
 
-    cors: Middleware para habilitar CORS (Cross-Origin Resource Sharing), permitiendo que la API sea accesible desde diferentes dominios.
+dotenv: Utilizado para manejar variables de entorno de manera segura y conveniente.
+
+cors: Middleware para habilitar CORS (Cross-Origin Resource Sharing), permitiendo que la API sea accesible desde diferentes dominios.
 
 Funcionalidades
 
-    Validación de Datos: Uso de Joi en middlewares para validar los datos de entrada en las rutas, asegurando que los datos recibidos cumplen con los esquemas definidos.
+Validación de Datos: Uso de Joi en middlewares para validar los datos de entrada en las rutas, asegurando que los datos recibidos cumplen con los esquemas definidos.
 
-    Manejo de Errores: Implementación de middlewares personalizados para manejar errores, incluyendo errores específicos de Boom para respuestas HTTP adecuadas.
+Manejo de Errores: Implementación de middlewares personalizados para manejar errores, incluyendo errores específicos de Boom para respuestas HTTP adecuadas.
 
-    Generación de Datos Falsos: Uso de @faker-js/faker para generar datos falsos, permitiendo simular un gran número de productos para pruebas.
+Generación de Datos Falsos: Uso de @faker-js/faker para generar datos falsos, permitiendo simular un gran número de productos para pruebas.
 
-    CRUD de Productos: Implementación de rutas para crear, leer, actualizar y eliminar productos en la base de datos.
+CRUD de Productos: Implementación de rutas para crear, leer, actualizar y eliminar productos en la base de datos.
 
-    Configuración de Docker: Uso de Docker para configurar un entorno de base de datos con PostgreSQL y una interfaz gráfica con pgAdmin, facilitando el desarrollo y la administración de la base de datos.
+Configuración de Docker: Uso de Docker para configurar un entorno de base de datos con PostgreSQL y una interfaz gráfica con pgAdmin, facilitando el desarrollo y la administración de la base de datos.
 
-    Manejo de Variables de Entorno: Uso de dotenv para cargar variables de entorno desde un archivo .env, mejorando la seguridad y flexibilidad de la configuración.
+Manejo de Variables de Entorno: Uso de dotenv para cargar variables de entorno desde un archivo .env, mejorando la seguridad y flexibilidad de la configuración.
 
-    CORS: Implementación de CORS mediante el middleware cors para permitir el acceso a la API desde diferentes dominios.
+CORS: Implementación de CORS mediante el middleware cors para permitir el acceso a la API desde diferentes dominios.
 
 Habilidades y Buenas Prácticas
 
-    Modularidad: El código está estructurado de manera modular, separando las rutas, middlewares, servicios y esquemas de validación en diferentes archivos.
+Modularidad: El código está estructurado de manera modular, separando las rutas, middlewares, servicios y esquemas de validación en diferentes archivos.
 
-    Abstracción de Servicios: Uso de una clase ProductsService para encapsular la lógica de negocio relacionada con los productos, promoviendo la reutilización de código.
+Abstracción de Servicios: Uso de una clase ProductsService para encapsular la lógica de negocio relacionada con los productos, promoviendo la reutilización de código.
 
-    Programación Orientada a Objetos (POO): Implementación de clases y métodos para manejar la lógica de negocio, lo que facilita la mantenibilidad y escalabilidad del código.
+Programación Orientada a Objetos (POO): Implementación de clases y métodos para manejar la lógica de negocio, lo que facilita la mantenibilidad y escalabilidad del código.
 
-    Validación Exhaustiva: Implementación de validación de datos en cada endpoint para asegurar la integridad de los datos que se manejan.
+Validación Exhaustiva: Implementación de validación de datos en cada endpoint para asegurar la integridad de los datos que se manejan.
 
-    Manejo de Errores: Uso de middlewares específicos para el manejo de errores, lo que permite una mejor gestión y respuesta ante fallos en la aplicación.
+Manejo de Errores: Uso de middlewares específicos para el manejo de errores, lo que permite una mejor gestión y respuesta ante fallos en la aplicación.
 
-    Uso de Docker: Configuración de servicios de base de datos mediante Docker, lo que permite un entorno de desarrollo reproducible y aislado.
+Uso de Docker: Configuración de servicios de base de datos mediante Docker, lo que permite un entorno de desarrollo reproducible y aislado.
 
-    Buenas Prácticas de Linting: Uso de herramientas como eslint y eslint-config-prettier para mantener un código limpio y consistente.
+Buenas Prácticas de Linting: Uso de herramientas como eslint y eslint-config-prettier para mantener un código limpio y consistente.
 
-    Seguridad y Configuración: Uso de dotenv para manejar variables de entorno y cors para gestionar el acceso a la API desde diferentes dominios, asegurando una configuración segura y flexible.
+Seguridad y Configuración: Uso de dotenv para manejar variables de entorno y cors para gestionar el acceso a la API desde diferentes dominios, asegurando una configuración segura y flexible.
 
 ## Author
 
