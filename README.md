@@ -107,7 +107,7 @@ Con estos pasos, deberías tener tu proyecto "e-commerce-my-store" configurado y
 
 
 ## My Skills
-**Tecnologías Utilizadas:** Express.js - Joi - Boom - Docker - pg - eslint y eslint-config-prettier - Faker - Cors - Dotenv
+**Tecnologías Utilizadas:** Express.js - Joi - Boom - Docker - pg - eslint y eslint-config-prettier - Faker - Cors - Dotenv - Sequelize
 
 - **Express.js:** Framework de Node.js utilizado para construir el servidor y manejar las rutas.
 
@@ -129,7 +129,7 @@ Con estos pasos, deberías tener tu proyecto "e-commerce-my-store" configurado y
 
 - **cors:** Middleware para habilitar CORS (Cross-Origin Resource Sharing), permitiendo que la API sea accesible desde diferentes dominios.
 
-- **Sequelize:**Librería ORM (Object-Relational Mapping) que se utiliza para interactuar con la base de datos PostgreSQL de manera más sencilla y estructurada.
+- **Sequelize/sequelize-cli:** Librería ORM (Object-Relational Mapping) que se utiliza para interactuar con la base de datos PostgreSQL de manera más sencilla y estructurada.
 
 ## Funcionalidades
 - **Validación de Datos:**
@@ -174,7 +174,7 @@ Implementación de CORS mediante el middleware cors para permitir el acceso a la
 
 - **Seguridad y Configuración:** Uso de dotenv para manejar variables de entorno y cors para gestionar el acceso a la API desde diferentes dominios, asegurando una configuración segura y flexible.
 
-- **ORM con Sequelize:** Planificación del uso de Sequelize como ORM para gestionar las interacciones con la base de datos de manera más eficiente y organizada.
+- **ORM con Sequelize:** Planificación del uso de Sequelize como ORM para gestionar las interacciones con la base de datos de manera más eficiente y organizada, ademas de aplicar migraciones.
 
 ## Author
 
