@@ -13,18 +13,18 @@ async function sendMail() {
     port: 465,
     secure: true, // true for 465, false for other ports
     auth: {
-      user: 'francozoqui@gmail.com', // generated ethereal user
-      pass: 'tsrfnajdjmiikqdv', // generated ethereal password
+      user: '----@gmail.com', // generated ethereal user
+      pass: '-----', // generated ethereal password
     },
   });
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
-    from: 'francozoqui@gmail.com', // sender address
-    to: "fervalentina1808@gmail.com", // list of receivers
+    from: '------@gmail.com', // sender address
+    to: "-----@gmail.com", // list of receivers
     subject: "Este es un correo especial", // Subject line
-    text: "Hola, te amo mucho", // plain text body
-    html: "<b>Soy el mejor</b>", // html body
+    text: "Hola!!", // plain text body
+    html: "<b>Hola</b>", // html body
   });
 
   console.log("Message sent: %s", info.messageId);
