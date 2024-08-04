@@ -3,6 +3,10 @@
 
 El proyecto "e-commerce-my-store" es una aplicación web para un e-commerce que permite la gestión principalmente de productos y usuarios. Utiliza Express.js para construir el servidor, Joi para la validación de datos, Boom para control de errores y PostgreSQL como base de datos. El proyecto también incorpora Docker para la configuración del entorno de desarrollo de la base de datos, utiliza la librería Sequelize para el ORM, bcrypt y passport.
 
+  ### Create customer
+  ![Preview create-customer](./public/create-customer.png)
+  ### Login customer
+  ![Preview login-customer](./public/login-customer.png)
 
 ## License
 
@@ -94,9 +98,9 @@ PASO 6: Verificar la Conexión a la Base de Datos
 
 - Dentro de psql, puedes ejecutar:
 
-      SELECT * FROM task;
+      SELECT * FROM users;
 
-- Esto debería devolver las filas de la tabla task si todo está configurado correctamente.
+- Esto debería devolver las filas de la tabla users si todo está configurado correctamente.
 
 
 PASO 7: Ejecutar ESLint para Verificar el Código
@@ -109,8 +113,8 @@ Con estos pasos, deberías tener tu proyecto "e-commerce-my-store" configurado y
 
 
 ## Tecnologías Utilizadas:
- Express.js - Joi - Boom - Docker - pg - eslint y eslint-config-prettier - Faker - Cors - Dotenv - Sequelize - bcrypt
-
+ ### Express.js - Joi - Boom - Docker - pg - eslint y eslint-config-prettier - Faker - Cors - Dotenv - Sequelize - bcrypt - Passport - Nodemailer
+  
 - **Express.js:** Framework de Node.js utilizado para construir el servidor y manejar las rutas.
 
 - **Joi:** Librería para la validación de datos, garantizando que los datos de entrada cumplan con ciertos esquemas.
@@ -137,7 +141,7 @@ Con estos pasos, deberías tener tu proyecto "e-commerce-my-store" configurado y
 
 - **passport/JWT:** Es un middleware de autenticación para Node.js que facilita la implementación de estrategias de autenticación, como la autenticación local o mediante redes sociales.
 
-- **Nodemailer:**
+- **Nodemailer:** Para enviar correos electrónicos de manera sencilla a través de servidores SMTP
 
 
 ## Funcionalidades
@@ -165,6 +169,7 @@ Implementación de CORS mediante el middleware cors para permitir el acceso a la
 - **Uso de Sequelize:**
  Planeado para facilitar la interacción con la base de datos mediante un ORM, simplificando las consultas SQL y permitiendo el uso de modelos de datos.
 
+- **Autenticación de Usuarios:** Implementación de Passport.js para gestionar la autenticación de usuarios, permitiendo la integración de estrategias de autenticación como Local, JWT, entre otras.
 
 
 ## Habilidades y Buenas Prácticas
@@ -187,6 +192,8 @@ Implementación de CORS mediante el middleware cors para permitir el acceso a la
 
 - **ORM con Sequelize:** Planificación del uso de Sequelize como ORM para gestionar las interacciones con la base de datos de manera más eficiente y organizada, ademas de aplicar migraciones.
 
+- **Integración de Autenticación:** Uso de Passport.js para implementar estrategias de autenticación de manera eficiente y segura, facilitando la gestión de sesiones de usuario y la protección de rutas en la aplicación.
+
 ## Author
 
 - [@argfiz](https://www.github.com/argfiz)
@@ -202,6 +209,6 @@ Implementación de CORS mediante el middleware cors para permitir el acceso a la
 
 Todavia por Determinar
 
- (HTTPS-HELMET) on developing
+ 
 
 
