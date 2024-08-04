@@ -1,7 +1,7 @@
 
 # Welcome to the e-commerce "e-Box" API REST
 
-El proyecto "e-commerce-my-store" es una aplicación web para un e-commerce que permite la gestión principalmente de productos y usuarios. Utiliza Express.js para construir el servidor, Joi para la validación de datos, Boom para control de errores y PostgreSQL como base de datos. El proyecto también incorpora Docker para la configuración del entorno de desarrollo de la base de datos y utiliza la librería Sequelize para el ORM.
+El proyecto "e-commerce-my-store" es una aplicación web para un e-commerce que permite la gestión principalmente de productos y usuarios. Utiliza Express.js para construir el servidor, Joi para la validación de datos, Boom para control de errores y PostgreSQL como base de datos. El proyecto también incorpora Docker para la configuración del entorno de desarrollo de la base de datos, utiliza la librería Sequelize para el ORM, bcrypt y passport.
 
 
 ## License
@@ -70,6 +70,8 @@ PASO 4: Configurar y Ejecutar el Contenedor PostgreSQL
           volumes:
             - ./postgres_data:/var/lib/postgresql/data
 
+- Al finalizar crear las carpetas **postgres_data** o **mysql_data** segun que base de datos vaya a usarse
+
 - Luego, inicia el contenedor de PostgreSQL:
 
       docker-compose up -d
@@ -106,8 +108,8 @@ PASO 7: Ejecutar ESLint para Verificar el Código
 Con estos pasos, deberías tener tu proyecto "e-commerce-my-store" configurado y listo para ser ejecutado en tu máquina local.
 
 
-## My Skills
-**Tecnologías Utilizadas:** Express.js - Joi - Boom - Docker - pg - eslint y eslint-config-prettier - Faker - Cors - Dotenv - Sequelize
+## Tecnologías Utilizadas:
+ Express.js - Joi - Boom - Docker - pg - eslint y eslint-config-prettier - Faker - Cors - Dotenv - Sequelize - bcrypt
 
 - **Express.js:** Framework de Node.js utilizado para construir el servidor y manejar las rutas.
 
@@ -130,6 +132,13 @@ Con estos pasos, deberías tener tu proyecto "e-commerce-my-store" configurado y
 - **cors:** Middleware para habilitar CORS (Cross-Origin Resource Sharing), permitiendo que la API sea accesible desde diferentes dominios.
 
 - **Sequelize/sequelize-cli:** Librería ORM (Object-Relational Mapping) que se utiliza para interactuar con la base de datos PostgreSQL de manera más sencilla y estructurada.
+
+- **bcrypt/hash-Sequelize-hook:** Es una librería utilizada para encriptar contraseñas mediante el algoritmo de hashing, comúnmente en hooks de Sequelize para almacenar contraseñas de manera segura en la base de datos.
+
+- **passport/JWT:** Es un middleware de autenticación para Node.js que facilita la implementación de estrategias de autenticación, como la autenticación local o mediante redes sociales.
+
+- **Nodemailer:**
+
 
 ## Funcionalidades
 - **Validación de Datos:**
@@ -155,6 +164,8 @@ Implementación de CORS mediante el middleware cors para permitir el acceso a la
 
 - **Uso de Sequelize:**
  Planeado para facilitar la interacción con la base de datos mediante un ORM, simplificando las consultas SQL y permitiendo el uso de modelos de datos.
+
+
 
 ## Habilidades y Buenas Prácticas
 

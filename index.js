@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const routerApi = require('./routes')
+const { checkApiKey } = require('./middlewares/auth.handler');
 
 const { logErrors, errorHandler, boomErrorHandler, handleSQLError } = require('./middlewares/error.handler')
 
@@ -22,10 +23,15 @@ const options = {
 app.use(cors(options))*/
 app.use(cors())
 
+require('./utils/auth')
+
 app.get('/', (req, res) => {
-  res.json('BIENVENIDOS AL SERVIDOR DE ARGFIZ')
+  res.send('BIENVENIDOS AL SERVIDOR DE ARGFIZ')
 })
 
+app.get('/nueva-ruta', checkApiKey, (req, res) => {
+  res.send('BIENVENIDOS NUEVA RUTA')
+})
 
 routerApi(app)
 
